@@ -7,13 +7,11 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 1rem;
-  position: relative;
 }
 
 nav {
   margin-bottom: 2rem;
   text-align: center;
-  position: relative;
 }
 
 nav ul {
@@ -53,15 +51,17 @@ h2 {
   color: #2563eb;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 section {
   margin-bottom: 2rem;
   padding: 1rem;
   background: #ffffff;
   border-radius: 0.5rem;
-  float: left;
   width: 100%;
   box-sizing: border-box;
-  position: relative;
 }
 
 img {
@@ -76,6 +76,14 @@ video {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
   margin: 1rem auto;
   border-radius: 0.5rem;
 }
@@ -119,72 +127,43 @@ video {
   border: 0.3rem solid #1d4ed8;
 }
 
-@media (min-width: 768px) {
-  body {
-    padding: 2rem;
-  }
-
-  nav li {
-    display: inline-block;
-    margin: 0 1rem;
-  }
-
-  img {
-    max-width: 60%;
-    float: right;
-    margin: 0 0 1rem 1.5rem;
-  }
-}
-@media screen and (min-width: 600px) {
-  body {
-    font-size: 1.05rem;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  main {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  img {
-    max-width: 80%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
+#map-page {
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 900px) {
-  body {
-    font-size: 1.15rem;
-  }
-
-  main {
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  nav ul {
-    gap: 2rem;
-  }
-
-  img {
-    max-width: 60%;
-  }
-
-  h1 {
-    font-size: 2.4rem;
-  }
+#slider-section {
+  text-align: center;
+  margin: 2rem auto;
+  width: 90%;
 }
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+#slider-image {
+  width: 60%;
+  max-width: 25rem;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+#prev-btn,
+#next-btn {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  background: #e5e7eb;
+}
+
 @media screen and (min-width: 600px) {
   body {
     font-size: 1.05rem;
@@ -207,7 +186,7 @@ video {
 
   p {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
   }
 }
 
@@ -231,31 +210,4 @@ video {
   p {
     width: 70%;
   }
-}
-#slider-section {
-  text-align: center;
-  margin: 2rem auto;
-  width: 90%;
-}
-
-.slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-#slider-image {
-  width: 60%;
-  max-width: 25rem;
-  height: auto;
-  border-radius: 0.5rem;
-}
-
-#prev-btn,
-#next-btn {
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
 }
