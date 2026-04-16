@@ -135,3 +135,53 @@ video {
     margin: 0 0 1rem 1.5rem;
   }
 }
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.05rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 1.15rem;
+  }
+
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  img {
+    max-width: 60%;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}
